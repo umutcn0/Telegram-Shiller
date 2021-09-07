@@ -65,28 +65,28 @@ class Shill():
         #self.join_channel()
         self.send_message()
 
-#id0 = Shill("7170514","545c2fbf8d373be9ef98742e15c1cc29","0",group0) #Anastasia
-id1 = Shill("7926583","dc6e057634064908cfc3abd802246859","1",group1) #Tom
-id2 = Shill("7774550","82e74cb492cbff8b6ba6bdc898bf3734","2",group2) #Johny
-id3 = Shill("7484147","5bfc0ec7576a9c9a0ccde47b535b7042","3",group3) #Ruski
-id4 = Shill("7452885","a3814383c5c84904b594dfb96d80b0d4","4",group4)
+id0 = Shill("","","0",group0) #Account 0
+id1 = Shill("","","1",group1) #Account 1
+id2 = Shill("","","2",group2) #Account 2
+id3 = Shill("","","3",group3) #Account 3
+id4 = Shill("","","4",group4) #Account 4
 
 
-#t1 = Thread(target=id0.account)
+t1 = Thread(target=id0.account)
 t2 = Thread(target=id1.account)
 t3 = Thread(target=id2.account)
 t4 = Thread(target=id3.account)
 t5 = Thread(target=id4.account)
 
 
-#t1.start()
+t1.start()
 t2.start()
 t3.start()
 t4.start()
 t5.start()
 
 
-#t1.join()
+t1.join()
 t2.join()
 t3.join()
 t4.join()
